@@ -1,0 +1,12 @@
+diff -up gcompris-9.0/src/gcompris/gcompris.c.patch gcompris-9.0/src/gcompris/gcompris.c
+--- gcompris-9.0/src/gcompris/gcompris.c.patch	2010-01-04 08:10:32.000000000 +0100
++++ gcompris-9.0/src/gcompris/gcompris.c	2010-01-04 08:11:02.000000000 +0100
+@@ -747,7 +747,7 @@ static void setup_window ()
+   {
+     GdkPixbuf *icon_pixbuf = NULL;
+     gchar *iconfile = gc_file_find_absolute("%s/%s",
+-					    properties->system_icon_dir, "gcompris.png",
++					    "/usr/share/icons/hicolor/48x48/apps", "gcompris.png",
+ 					    NULL);
+     if(iconfile)
+       {
